@@ -8,6 +8,11 @@ Very useful if you have a spare raspbery pi and some webcam and some reading tut
 
 Be willing to play with raspberry pi CMD and do some very simple soldering.
 
+### Advantages
+- It is simple  
+- No need to do 3d printing  
+- It is cheap, especially if you have spare old raspbery with some old webcam  
+
 ### Hardware 
 - Raspbery Pi (I used model B+)
 - Juwel Automatic Feeder (just a simplest feeder with buttons around 15 Euro)
