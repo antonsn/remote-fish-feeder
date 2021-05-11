@@ -1,0 +1,44 @@
+
+const express = require('express')
+const basicAuth = require('express-basic-auth')
+const Gpio = require('onoff').Gpio
+
+
+const app = express()
+
+app.use(basicAuth({
+  users: { admin: 'feeder' },
+  challenge: true 
+}))
+
+
+app.use(express.static('public'))
+
+
+const feedPin = new Gpio(17, 'out')
+
+feedPin.writeSync(1)
+
+ 
+
+
+app.get('/', function (req, res) {
+  return res.sendfile('/public/index.html', { root: __dirname + '/..' })
+})
+
+app.post('/feed', function (req, res) {
+  feedPin.writeSync(0)
+
+  setTimeout(() => {
+    feedPin.writeSync(1)
+
+  }, 100)
+
+  res.send('feeded')
+})
+
+app.listen(80, function () {
+  console.log('app listening')
+}) 
+
+
