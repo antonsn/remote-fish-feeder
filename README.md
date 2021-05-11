@@ -8,7 +8,7 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 
 - Be willing to play with raspberry pi CMD and do some very simple soldering.
 - Have (buy) a simple feeder Juwel Automatic Feeder (Juwel Easyfeed 15 Euro) or similar. 
-- Make app available outside the home network. One can use Dynamic DNS Providers. It is not as scary as it sounds just another tutorial to read.
+- Make app available outside the home network. One can use Dynamic DNS Providers. It is not as scary as it sounds, it is just another tutorial to read.
 
 
 <img src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" data-canonical-src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" width="300" height="200" />
