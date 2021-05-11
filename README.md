@@ -4,6 +4,10 @@
 Be able to feed your fish and watch it when on vacation. Usually, feeders, I guess, do not have cameras.  
 Very useful if you have a spare raspbery pi and some webcam and some reading tutorials skills.   
 
+### Prerequisites
+
+Be willing to play with raspberry pi CMD and do some very simple soldering.
+
 ### Hardware 
 - Raspbery Pi (I used model B+)
 - Juwel Automatic Feeder (just a simplest feeder with buttons around 15 Euro)
