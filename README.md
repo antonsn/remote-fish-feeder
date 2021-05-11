@@ -1,8 +1,8 @@
-# Simple remote fish feeder with camera for aquarium using raspbery pi
+# Simple remote fish feeder with camera for aquarium using raspberry pi
 
 ### Purpose
 Be able to feed your fish and watch it when on vacation. Usually, feeders, I guess, do not have cameras.  
-Very useful if you have a spare raspbery pi and some webcam and some reading tutorials skills.   
+Very useful if you have a spare raspberry pi and some webcam and some reading tutorials skills.   
 
 ### Prerequisites
 
@@ -11,7 +11,7 @@ Very useful if you have a spare raspbery pi and some webcam and some reading tut
 
 
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" data-canonical-src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" width="400" height="300" />
+<img src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" data-canonical-src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" width="300" height="200" />
 
 
 
@@ -19,7 +19,7 @@ Very useful if you have a spare raspbery pi and some webcam and some reading tut
 
 - It is simple  
 - No need to do 3d printing  
-- It is cheap, especially, if you have spare old raspbery with some old webcam
+- It is cheap, especially, if you have spare old raspberry with some old webcam
 - Raspbery powers feeder 
 - It looks awesome 
 
