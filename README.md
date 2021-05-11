@@ -6,16 +6,27 @@ Very useful if you have a spare raspbery pi and some webcam and some reading tut
 
 ### Prerequisites
 
-Be willing to play with raspberry pi CMD and do some very simple soldering.
+- Be willing to play with raspberry pi CMD and do some very simple soldering.
+- Have (buy) a simple feeder Juwel Automatic Feeder (Juwel Easyfeed 15 Euro) or similar. 
+
+
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" data-canonical-src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" width="400" height="300" />
+
+
 
 ### Advantages
+
 - It is simple  
 - No need to do 3d printing  
-- It is cheap, especially if you have spare old raspbery with some old webcam  
+- It is cheap, especially, if you have spare old raspbery with some old webcam
+- Raspbery powers feeder 
+- It looks awesome 
 
 ### Hardware 
 - Raspbery Pi (I used model B+)
 - Juwel Automatic Feeder (just a simplest feeder with buttons around 15 Euro)
+
 
 ### Software 
 - install `motion` https://tutorials-raspberrypi.com/raspberry-pi-security-camera-livestream-setup/
