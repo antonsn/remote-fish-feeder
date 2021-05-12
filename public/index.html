@@ -1,10 +1,53 @@
 <html>
+
 <head>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        .full {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .kc_fab_main_btn {
+            background-color: hsl(64, 90%, 58%);
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            background: rgba(200, 244, 54, 0.219);
+            border: none;
+            outline: none;
+            color: #FFF; 
+            font-size: 36px;
+
+            position: fixed; 
+            bottom: 0;
+            right: 0;
+
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            transition: 3s;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .kc_fab_main_btn:focus {
+            transform: scale(1.1);
+            transform: rotate(380deg);
+            -ms-transform: rotate(380deg);
+            -webkit-transform: rotate(380deg);
+
+        }
+    </style>
 </head>
+
 <body>
-<img src= "tank.jpg" width="800" height="460"/>
-<form action="/feed" method="POST">
-<input type="submit"  value="Feed my fish"/>
-</form>
+    <img src="http://192.168.2.123:8040/?action=stream" class="full" />
+    <form action="/feed" method="POST">
+        <input class="kc_fab_main_btn" type="submit" value="Feed" />
+    </form>
 </body>
 </hmtl>
