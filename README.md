@@ -31,7 +31,11 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 
 
 ### Software 
-- install `motion` https://tutorials-raspberrypi.com/raspberry-pi-security-camera-livestream-setup/
+- install    <s> `motion` https://tutorials-raspberrypi.com/raspberry-pi-security-camera-livestream-setup/</s> 
+I used mjpeg-streamer because it not using that much CPU on my hardware
+https://github.com/jacksonliam/mjpg-streamer but if your hardcare is ok with motion go with it
+
+
 - install node v12.21.0
 
 ```
@@ -45,9 +49,16 @@ sudo cp -R * /usr/local/
 - In project folder
 
 ```
+sudo git clone <this repo>
+cd <this repo>
 sudo npm install --unsafe-perm   onoff
-npm i
+sudo npm i
 ```
+
+
+### Configuration
+
+
 
 //TODO finish
 - mention basic auth   
