@@ -20,11 +20,10 @@ const feedPin = new Gpio(17, 'out')
 feedPin.writeSync(1)
 
 
-//TODO add motion auth
 app.get('/tank.jpg', new MjpegProxy('http://192.168.2.123:8040/?action=stream').proxyRequest);
 
 app.get('/', function (req, res) {
-  return res.sendfile('/public/index.html', { root: __dirname + '/..' })
+  return res.redirect('index.html')
 })
 
 app.post('/feed', function (req, res) {
@@ -35,7 +34,7 @@ app.post('/feed', function (req, res) {
 
   }, 100)
 
-  res.send('feeded')
+  return res.redirect('feeded.html')
 })
 
 app.listen(port, function () {
