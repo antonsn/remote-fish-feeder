@@ -16,18 +16,18 @@
 
         .kc_fab_main_btn {
             background-color: hsl(64, 90%, 58%);
-            width: 90px;
-            height: 90px;
+            width: 140px;
+            height: 140px;
             border-radius: 100%;
-            background: rgba(200, 244, 54, 0.219);
+            background: rgba(64, 65, 62, 0.308);
             border: none;
             outline: none;
             color: #FFF; 
             font-size: 36px;
 
             position: fixed; 
-            bottom: 0;
-            right: 0;
+            bottom: 10;
+            right: 10;
 
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             transition: 3s;
@@ -45,9 +45,11 @@
 </head>
 
 <body>
-    <img src="http://192.168.2.123:8040/?action=stream" class="full" />
+
+    <img src= "tank.jpg"  class="full"/>
+
     <form action="/feed" method="POST">
-        <input class="kc_fab_main_btn" type="submit" value="Feed" />
+        <input class="kc_fab_main_btn"   onclick="return confirm('Are you sure?')" type="submit" value="Feed" />
     </form>
 </body>
 </hmtl>

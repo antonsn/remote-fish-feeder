@@ -2,6 +2,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0",
-    "onoff": "^6.0.3"
+    "onoff": "^6.0.3",
+    "mjpeg-proxy": "^0.3.0"
   }
 }
