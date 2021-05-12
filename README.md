@@ -1,4 +1,4 @@
-# Simple remote fish feeder with camera for aquarium using raspberry pi
+# Simple remote fish feeder for aquarium with camera for aquarium using raspberry pi
 
 ### Purpose
 Be able to feed your fish and watch it when on vacation for exampe using your phone. Usually, feeders, I guess, do not have cameras.  
