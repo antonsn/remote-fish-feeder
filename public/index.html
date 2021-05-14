@@ -15,41 +15,106 @@
         }
 
         .kc_fab_main_btn {
-            background-color: hsl(64, 90%, 58%);
+            background-color: hsl(75, 3%, 31%);
             width: 140px;
             height: 140px;
             border-radius: 100%;
-            background: rgba(64, 65, 62, 0.308);
+            background: rgba(17, 24, 2, 0.657);
             border: none;
             outline: none;
-            color: #FFF; 
+            color: rgb(144, 140, 163);
             font-size: 36px;
-
-            position: fixed; 
+            cursor: pointer;
+            position: fixed;
+            user-select: none;
             bottom: 10;
             right: 10;
 
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             transition: 3s;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            text-align: center;
         }
 
-        .kc_fab_main_btn:focus {
+        .kc_fab_main_btn_focus {
             transform: scale(1.1);
             transform: rotate(380deg);
             -ms-transform: rotate(380deg);
             -webkit-transform: rotate(380deg);
 
         }
+
+        .kc_fab_main_btn_error {
+            background-color: hsl(0, 100%, 50%);
+
+        }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            // Delete 
+            $('#feed').click(function () {
+
+
+                bootbox.confirm("Do you really want to Feed your fish?", function (result) {
+
+                    if (result) {
+
+
+                        $.ajax({
+                            url: '/feed',
+                            type: 'POST',
+                            success: function (response) {
+
+
+                                $('#feed').addClass("kc_fab_main_btn_focus")
+
+                                setTimeout(() => {
+                                    $('#feed').removeClass("kc_fab_main_btn_focus")
+                                }, 3000)
+
+
+                            },
+                            error: function (request, status, error) {
+
+
+                                $('#feed').addClass("kc_fab_main_btn_error")
+                                $('#feed').val("Error")
+
+                                setTimeout(() => {
+                                    $('#feed').removeClass("kc_fab_main_btn_error")
+                                    $('#feed').val("Feed")
+                                }, 3000)
+
+                                console.error(error)
+
+
+                            }
+
+                        });
+                    }
+                })
+
+            });
+
+        });
+
+    </script>
 </head>
 
 <body>
 
-    <img src= "tank.jpg"  class="full"/>
+    <img src="tank.jpg" class="full" />
 
-    <form action="/feed" method="POST">
-        <input class="kc_fab_main_btn"   onclick="return confirm('Are you sure you want to feed your fish ? Don't overdo it!')" type="submit" value="Feed" />
-    </form>
+    <input id="feed" class="kc_fab_main_btn" value="Feed" />
+
 </body>
 </hmtl>
