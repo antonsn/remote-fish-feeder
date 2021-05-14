@@ -11,7 +11,7 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 - Make app available outside the home network. One can use Dynamic DNS Providers. It is not as scary as it sounds, it is just another tutorial to read.
 
 
-<img src="/pic/feeder.png" width="400" height="600" />
+<img src="/pic/feeder.jpg" width="400" height="600" />
 
 ### Features
 
