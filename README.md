@@ -11,8 +11,7 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 - Make app available outside the home network. One can use Dynamic DNS Providers. It is not as scary as it sounds, it is just another tutorial to read.
 
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" data-canonical-src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" width="300" height="200" />
-
+<img src="/pic/feeder.png" width="400" height="600" />
 
 ### Features
 
@@ -28,6 +27,20 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 ### Hardware 
 - Raspbery Pi (I used model B+)
 - Juwel Automatic Feeder (Juwel Easyfeed) or with similar approach 3 Volt (2 x 1.5v batteries) which has a button for manual feeding.
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" data-canonical-src="https://images-na.ssl-images-amazon.com/images/I/61xPupca0OL._AC_SL1270_.jpg" width="150" height="100" />
+
+
+### Wiring 
+
+<img src="/pic/feeder-wiring1.jpg" />
+
+For this particular feeder `feedPin.writeSync(0)` should be manually start the process.
+I used 1k resistor between GPIO pin and switch but it might be unnecessary. 
+
+[+] is connected to PI 3.3V   
+[-] connected to PI ground   
+
 
 
 ### Software 
@@ -78,11 +91,13 @@ files = /home/pi/remote-fish-feeder/supervisor_scripts/*.conf
 
 - check/provide your camera stream url in `server.js`, especially, if you are not using `mjpeg-streamer`
 - change password  in `server.js` so noone else can access your fish
-- do a nasty router config if you do not have a static IP. (Dynamic DNS Providers)
+- do a nasty router config if you do not have a static IP. Check Dynamic DNS Providers tutorials.
 
-//TODO 
+For example I used https://www.duckdns.org/ and in `Dynamic DNS Settings` of my router. 
 
-- wiring   
+
+
+ 
 
 
 
