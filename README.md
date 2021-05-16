@@ -74,7 +74,9 @@ sudo npm install --unsafe-perm   onoff
 sudo npm i
 ```
 
-4. install supervisorctl
+4. install supervisorctl   
+Needed to start processes o n startup.
+
 
 ```
 sudo apt-get install supervisor
@@ -91,6 +93,24 @@ sudo nano /etc/supervisor/supervisord.conf
 files = /home/pi/remote-fish-feeder/supervisor_scripts/*.conf
 
 ```
+
+After changing configs please run:
+
+`sudo supervisorctl  reread & sudo supervisorctl update`
+
+
+Some useul supervisorctl commands:     
+
+```
+sudo supervisorctl status
+sudo supervisorctl stop all
+sudo supervisorctl start all
+
+ ```
+ 
+ 
+![image](https://user-images.githubusercontent.com/12578135/118402534-92c36680-b66a-11eb-9ada-d5ed4d8de0fe.png)
+
 
 ### Configuration
 
