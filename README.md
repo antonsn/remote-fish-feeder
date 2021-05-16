@@ -120,7 +120,7 @@ For example I used https://www.duckdns.org/ and in `Dynamic DNS Settings` of my 
 
 
 ### Questions
-If any questions please comment on video. I can also provide image of the raspberry pi OS with everything preinstalled if needed.   
+If any questions/feedback please leave in video comments. I can also provide image of the raspberry pi OS with everything preinstalled if needed.   
 
 
 
