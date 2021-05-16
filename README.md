@@ -108,9 +108,6 @@ sudo supervisorctl start all
 
  ```
  
- 
-![image](https://user-images.githubusercontent.com/12578135/118402534-92c36680-b66a-11eb-9ada-d5ed4d8de0fe.png)
-
 
 ### Configuration
 
