@@ -49,7 +49,7 @@ I used 1k resistor between GPIO pin and switch but it might be unnecessary.
 
 
 ### Software 
-1. install   <s> `motion` https://tutorials-raspberrypi.com/raspberry-pi-security-camera-livestream-setup/</s>   
+1. install   <s> [motion](https://motion-project.github.io/) https://tutorials-raspberrypi.com/raspberry-pi-security-camera-livestream-setup/</s>   
  In the end I end up using [mjpeg-streamer](https://github.com/jacksonliam/mjpg-streamer) because it is not using as much CPU as `motion` on my hardware
  but if your hardcare is ok with motion go with it
 
