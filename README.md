@@ -6,7 +6,8 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 
 ### Video description (on click)
 
-https://youtu.be/Ey8n5sQXgew
+[![feeder video](/pic/aquarium_small.jpg)](https://youtu.be/Ey8n5sQXgew)
+
 
 ### Prerequisites
 
