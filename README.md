@@ -4,6 +4,10 @@
 Be able to feed your fish and watch it when on vacation for exampe using your phone. Usually, feeders, I guess, do not have cameras.  
 Very useful if you have a spare raspberry pi and some webcam and some reading tutorials skills.   
 
+### Video description (on click)
+
+https://youtu.be/Ey8n5sQXgew
+
 ### Prerequisites
 
 - Be willing to play with raspberry pi CMD and do some very simple soldering.
