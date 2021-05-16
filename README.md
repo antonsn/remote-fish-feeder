@@ -96,9 +96,14 @@ files = /home/pi/remote-fish-feeder/supervisor_scripts/*.conf
 
 - check/provide your camera stream url in `server.js`, especially, if you are not using `mjpeg-streamer`
 - change password  in `server.js` so noone else can access your fish
+- change the resolution if needed in [video.conf](https://github.com/antonsn/remote-fish-feeder/blob/main/supervisor_scripts/video.conf)
 - do a nasty router config if you do not have a static IP. Check Dynamic DNS Providers tutorials.
 
 For example I used https://www.duckdns.org/ and in `Dynamic DNS Settings` of my router. 
+
+
+### Questions
+If any questions please comment on video. I can also provide image of the raspberry pi OS with everything preinstalled if needed.   
 
 
 
