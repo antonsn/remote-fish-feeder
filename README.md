@@ -1,3 +1,6 @@
+
+<meta name="google-site-verification" content="5RGJyO6RePAA9Y6gf2l3iBlzw2MW7S8GwedxUORU3v8" />
+
 # Simple remote fish feeder for aquarium with camera using raspberry pi
 
 ### Purpose
