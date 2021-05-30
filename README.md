@@ -19,7 +19,7 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 - Make app available outside the home network. One can use Dynamic DNS Providers. It is not as scary as it sounds, it is just another tutorial to read.
 
 
-<img src="https://github.com/antonsn/remote-fish-feeder/blob/master/pic/feeder.jpg" width="400" height="600" />
+<img src="https://github.com/antonsn/remote-fish-feeder/blob/master/pic/feeder.jpg?raw=true" width="400" height="600" />
 
 ### Features
 
@@ -41,7 +41,7 @@ Very useful if you have a spare raspberry pi and some webcam and some reading tu
 
 ### Wiring 
 
-<img src="https://github.com/antonsn/remote-fish-feeder/blob/master/pic/feeder-wiring1.jpg" />
+<img src="https://github.com/antonsn/remote-fish-feeder/blob/master/pic/feeder-wiring1.jpg?raw=true" />
 
 For this particular feeder `feedPin.writeSync(0)` should be manually start the process.
 I used 1k resistor between GPIO pin and switch but it might be unnecessary. 
